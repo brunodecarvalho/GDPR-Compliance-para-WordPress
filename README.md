@@ -1,2 +1,2 @@
-# GDPR-Compliance-para-WordPress
+# GDPR Compliance para WordPress
 Plugin de GDPR Compliance para WordPress
