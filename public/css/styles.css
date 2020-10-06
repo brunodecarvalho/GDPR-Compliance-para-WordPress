@@ -1,0 +1,126 @@
+/* 
+ * THEMES 
+ */
+/* OCEAN */
+.ocean-theme.panel_out {
+  background-color: #3185fc;
+  border-color: #403f4c !important;
+}
+.ocean-theme .message_text {
+  color: #0b4f6c;
+}
+.ocean-theme .button_text {
+  background-color: #403f4c;
+  color: #fff;
+}
+.ocean-theme .button_text:focus, 
+.ocean-theme .button_text:hover {
+  background-color: #fff;
+  color: #403f4c;
+}
+
+/* LIGHT */
+.light-theme.panel_out {
+  background-color: #fbfbff;
+  border-color: #01baef !important;
+}
+.light-theme .message_text {
+  color: #0b4f6c;
+}
+.light-theme .button_text {
+  background-color: #01baef;
+  color: #fff;
+}
+.light-theme .button_text:focus, 
+.light-theme .button_text:hover {
+  background-color: #fff;
+  color: #01baef;
+}
+
+/* FOREST */
+.forest-theme.panel_out {
+  background-color: #5ef38c;
+  border-color: #266447 !important;
+}
+.forest-theme .message_text {
+  color: #2b9720;
+}
+.forest-theme .button_text {
+  background-color: #266447;
+  color: #fff;
+}
+.forest-theme .button_text:focus, 
+.forest-theme .button_text:hover {
+  background-color: #fff;
+  color: #266447;
+}
+
+/*
+ * POSITION
+ */
+.top.panel_out {
+  top: 0;
+}
+.bottom.panel_out {
+  bottom: 0;
+}
+ 
+/*
+ * GENERAL STYLES
+ */
+.panel_out {
+  box-sizing: border-box;
+  left: 0;
+  position: fixed;
+  right: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 1000;
+}
+
+.panel_out.top {
+  border-bottom: 5px solid transparent;
+}
+
+.panel_out.bottom {
+  border-top: 5px solid transparent;
+}
+
+.wrap_inner {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 970px;
+  padding: 24px 16px
+}
+
+.message_text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0
+}
+
+.button_text {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 24px 0 0;
+  padding: 16px 32px 15px;
+  text-align: center;
+  transition: background-color .2s ease, color .2s ease;
+  white-space: nowrap
+}
+
+@media only screen and (min-width:767px) {
+  .button_text {
+      margin: 0 0 0 24px
+  }
+  .wrap_inner {
+      align-items: center;
+      flex-direction: row
+  }
+}
